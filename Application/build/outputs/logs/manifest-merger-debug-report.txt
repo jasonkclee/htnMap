@@ -1,0 +1,95 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/wenqin/Desktop/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:18:1-40:12
+MERGED from [com.android.support:support-v13:27.0.2] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/support-v13-27.0.2.aar/1dbcf935f1e05c1a9b7d67f1375042d7/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-v4:27.0.2] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/support-v4-27.0.2.aar/ca60b7999920dbd291bb2c26c4411d8f/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cardview-v7:27.0.2] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.0.2.aar/186c74841e9030771b067dc697addecc/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:appcompat-v7:27.0.2] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/a30c05e161c9390be32672b2cc9dece3/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:27.0.2] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.0.2.aar/f3ff1ec9f35b232d8265831a97a08cd9/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:27.0.2] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/support-fragment-27.0.2.aar/1b7c6a26842f2eda915897033bcb9924/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.0.2] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.0.2.aar/2bd8401f3f48885a4bf8251368c23a64/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.0.2] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.0.2.aar/362f2a453379e8924e95eb22f0c9f1a0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.0.2] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.0.2.aar/30f68a6def637675a8aa03e4588858a4/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.0.2] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.0.2.aar/759e2bafe488f7be776c99390001ac2d/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.0.2] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/085355902d6c44207cf7b4474029f9c4/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.0.3] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/runtime-1.0.3.aar/ca41b99a7d26f06282c947a61fe158a3/AndroidManifest.xml:17:1-24:12
+	package
+		ADDED from /Users/wenqin/Desktop/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:19:5-47
+	xmlns:android
+		ADDED from /Users/wenqin/Desktop/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:18:11-69
+uses-permission#android.permission.CAMERA
+ADDED from /Users/wenqin/Desktop/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:21:5-65
+	android:name
+		ADDED from /Users/wenqin/Desktop/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:21:22-62
+uses-feature#android.hardware.camera
+ADDED from /Users/wenqin/Desktop/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:23:5-60
+	android:name
+		ADDED from /Users/wenqin/Desktop/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:23:19-57
+uses-feature#android.hardware.camera.autofocus
+ADDED from /Users/wenqin/Desktop/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:24:5-70
+	android:name
+		ADDED from /Users/wenqin/Desktop/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:24:19-67
+application
+ADDED from /Users/wenqin/Desktop/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:26:5-38:19
+	android:label
+		ADDED from /Users/wenqin/Desktop/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:27:9-41
+	android:icon
+		ADDED from /Users/wenqin/Desktop/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:28:9-45
+	android:allowBackup
+		ADDED from /Users/wenqin/Desktop/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:26:18-44
+	android:theme
+		ADDED from /Users/wenqin/Desktop/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:29:9-45
+activity#com.example.android.camera2basic.CameraActivity
+ADDED from /Users/wenqin/Desktop/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:31:9-37:20
+	android:label
+		ADDED from /Users/wenqin/Desktop/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:32:19-51
+	android:name
+		ADDED from /Users/wenqin/Desktop/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:31:19-49
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/wenqin/Desktop/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:33:13-36:29
+action#android.intent.action.MAIN
+ADDED from /Users/wenqin/Desktop/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:34:17-69
+	android:name
+		ADDED from /Users/wenqin/Desktop/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:34:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/wenqin/Desktop/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:35:17-77
+	android:name
+		ADDED from /Users/wenqin/Desktop/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:35:27-74
+uses-sdk
+INJECTED from /Users/wenqin/Desktop/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/wenqin/Desktop/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml
+INJECTED from /Users/wenqin/Desktop/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml
+MERGED from [com.android.support:support-v13:27.0.2] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/support-v13-27.0.2.aar/1dbcf935f1e05c1a9b7d67f1375042d7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v13:27.0.2] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/support-v13-27.0.2.aar/1dbcf935f1e05c1a9b7d67f1375042d7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.0.2] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/support-v4-27.0.2.aar/ca60b7999920dbd291bb2c26c4411d8f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.0.2] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/support-v4-27.0.2.aar/ca60b7999920dbd291bb2c26c4411d8f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:27.0.2] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.0.2.aar/186c74841e9030771b067dc697addecc/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:27.0.2] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.0.2.aar/186c74841e9030771b067dc697addecc/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.0.2] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/a30c05e161c9390be32672b2cc9dece3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.0.2] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/a30c05e161c9390be32672b2cc9dece3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.0.2] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.0.2.aar/f3ff1ec9f35b232d8265831a97a08cd9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.0.2] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.0.2.aar/f3ff1ec9f35b232d8265831a97a08cd9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.0.2] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/support-fragment-27.0.2.aar/1b7c6a26842f2eda915897033bcb9924/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.0.2] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/support-fragment-27.0.2.aar/1b7c6a26842f2eda915897033bcb9924/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.0.2] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.0.2.aar/2bd8401f3f48885a4bf8251368c23a64/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.0.2] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.0.2.aar/2bd8401f3f48885a4bf8251368c23a64/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.0.2] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.0.2.aar/362f2a453379e8924e95eb22f0c9f1a0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.0.2] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.0.2.aar/362f2a453379e8924e95eb22f0c9f1a0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.0.2] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.0.2.aar/30f68a6def637675a8aa03e4588858a4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.0.2] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.0.2.aar/30f68a6def637675a8aa03e4588858a4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.0.2] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.0.2.aar/759e2bafe488f7be776c99390001ac2d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.0.2] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.0.2.aar/759e2bafe488f7be776c99390001ac2d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.0.2] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/085355902d6c44207cf7b4474029f9c4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.0.2] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/085355902d6c44207cf7b4474029f9c4/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.0.3] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/runtime-1.0.3.aar/ca41b99a7d26f06282c947a61fe158a3/AndroidManifest.xml:20:5-22:41
+MERGED from [android.arch.lifecycle:runtime:1.0.3] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/runtime-1.0.3.aar/ca41b99a7d26f06282c947a61fe158a3/AndroidManifest.xml:20:5-22:41
+INJECTED from /Users/wenqin/Desktop/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml
+INJECTED from /Users/wenqin/Desktop/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/wenqin/Desktop/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml
+		ADDED from /Users/wenqin/Desktop/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml
+		INJECTED from /Users/wenqin/Desktop/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/wenqin/Desktop/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml
+		ADDED from /Users/wenqin/Desktop/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml
+		INJECTED from /Users/wenqin/Desktop/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml
