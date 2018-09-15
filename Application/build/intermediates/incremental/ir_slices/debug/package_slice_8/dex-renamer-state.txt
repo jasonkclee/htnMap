@@ -1,4 +1,4 @@
-#Sat Sep 15 01:39:20 EDT 2018
-base.0=/Users/wenqin/Desktop/android-Camera2Basic-master/Application/build/intermediates/transforms/dexMerger/debug/8
+#Sat Sep 15 09:32:31 EDT 2018
+base.0=/Users/wenqin/Documents/Projects/htnMap/Application/build/intermediates/transforms/dexMerger/debug/8
 path.0=classes.dex
 renamed.0=classes.dex

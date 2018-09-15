@@ -1,74 +1,110 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/wenqin/Desktop/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:18:1-40:12
+ADDED from /Users/wenqin/Documents/Projects/htnMap/Application/src/main/AndroidManifest.xml:16:1-48:12
 MERGED from [com.android.support:support-v13:27.0.2] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/support-v13-27.0.2.aar/1dbcf935f1e05c1a9b7d67f1375042d7/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-location:15.0.1] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/play-services-location-15.0.1.aar/33eca1a156d9e044d0848fd15d0249e8/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/60e56fcbf3edcacc73dafaa968887bb5/AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-15.0.1.aar/e61ce95bf819955a6467233205aba4bc/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/a87f6faa03154348161cc2114c8fb188/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/3f976b33a5608ab87e389c71c3258069/AndroidManifest.xml:17:1-28:12
 MERGED from [com.android.support:support-v4:27.0.2] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/support-v4-27.0.2.aar/ca60b7999920dbd291bb2c26c4411d8f/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:cardview-v7:27.0.2] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.0.2.aar/186c74841e9030771b067dc697addecc/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:appcompat-v7:27.0.2] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/a30c05e161c9390be32672b2cc9dece3/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-media-compat:27.0.2] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.0.2.aar/f3ff1ec9f35b232d8265831a97a08cd9/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/b7228675c4792a18978dc3d8e3b6431b/AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.support:support-fragment:27.0.2] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/support-fragment-27.0.2.aar/1b7c6a26842f2eda915897033bcb9924/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-core-utils:27.0.2] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.0.2.aar/2bd8401f3f48885a4bf8251368c23a64/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:animated-vector-drawable:27.0.2] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.0.2.aar/362f2a453379e8924e95eb22f0c9f1a0/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-core-ui:27.0.2] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.0.2.aar/30f68a6def637675a8aa03e4588858a4/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-vector-drawable:27.0.2] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.0.2.aar/759e2bafe488f7be776c99390001ac2d/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:27.0.2] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.0.2.aar/f3ff1ec9f35b232d8265831a97a08cd9/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-compat:27.0.2] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/085355902d6c44207cf7b4474029f9c4/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:runtime:1.0.3] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/runtime-1.0.3.aar/ca41b99a7d26f06282c947a61fe158a3/AndroidManifest.xml:17:1-24:12
 	package
-		ADDED from /Users/wenqin/Desktop/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:19:5-47
+		ADDED from /Users/wenqin/Documents/Projects/htnMap/Application/src/main/AndroidManifest.xml:17:5-47
 	xmlns:android
-		ADDED from /Users/wenqin/Desktop/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:18:11-69
+		ADDED from /Users/wenqin/Documents/Projects/htnMap/Application/src/main/AndroidManifest.xml:16:11-69
 uses-permission#android.permission.CAMERA
-ADDED from /Users/wenqin/Desktop/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:21:5-65
+ADDED from /Users/wenqin/Documents/Projects/htnMap/Application/src/main/AndroidManifest.xml:19:5-65
 	android:name
-		ADDED from /Users/wenqin/Desktop/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:21:22-62
+		ADDED from /Users/wenqin/Documents/Projects/htnMap/Application/src/main/AndroidManifest.xml:19:22-62
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from /Users/wenqin/Documents/Projects/htnMap/Application/src/main/AndroidManifest.xml:20:5-79
+	android:name
+		ADDED from /Users/wenqin/Documents/Projects/htnMap/Application/src/main/AndroidManifest.xml:20:22-76
 uses-feature#android.hardware.camera
-ADDED from /Users/wenqin/Desktop/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:23:5-60
+ADDED from /Users/wenqin/Documents/Projects/htnMap/Application/src/main/AndroidManifest.xml:22:5-60
 	android:name
-		ADDED from /Users/wenqin/Desktop/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:23:19-57
+		ADDED from /Users/wenqin/Documents/Projects/htnMap/Application/src/main/AndroidManifest.xml:22:19-57
 uses-feature#android.hardware.camera.autofocus
-ADDED from /Users/wenqin/Desktop/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:24:5-70
+ADDED from /Users/wenqin/Documents/Projects/htnMap/Application/src/main/AndroidManifest.xml:23:5-70
 	android:name
-		ADDED from /Users/wenqin/Desktop/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:24:19-67
+		ADDED from /Users/wenqin/Documents/Projects/htnMap/Application/src/main/AndroidManifest.xml:23:19-67
 application
-ADDED from /Users/wenqin/Desktop/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:26:5-38:19
+ADDED from /Users/wenqin/Documents/Projects/htnMap/Application/src/main/AndroidManifest.xml:25:5-46:19
+MERGED from [com.google.android.gms:play-services-location:15.0.1] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/play-services-location-15.0.1.aar/33eca1a156d9e044d0848fd15d0249e8/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-location:15.0.1] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/play-services-location-15.0.1.aar/33eca1a156d9e044d0848fd15d0249e8/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/60e56fcbf3edcacc73dafaa968887bb5/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/60e56fcbf3edcacc73dafaa968887bb5/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-15.0.1.aar/e61ce95bf819955a6467233205aba4bc/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-15.0.1.aar/e61ce95bf819955a6467233205aba4bc/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/a87f6faa03154348161cc2114c8fb188/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/a87f6faa03154348161cc2114c8fb188/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/3f976b33a5608ab87e389c71c3258069/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/3f976b33a5608ab87e389c71c3258069/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/b7228675c4792a18978dc3d8e3b6431b/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/b7228675c4792a18978dc3d8e3b6431b/AndroidManifest.xml:9:5-20
 	android:label
-		ADDED from /Users/wenqin/Desktop/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:27:9-41
+		ADDED from /Users/wenqin/Documents/Projects/htnMap/Application/src/main/AndroidManifest.xml:28:9-41
 	android:icon
-		ADDED from /Users/wenqin/Desktop/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:28:9-45
+		ADDED from /Users/wenqin/Documents/Projects/htnMap/Application/src/main/AndroidManifest.xml:27:9-45
 	android:allowBackup
-		ADDED from /Users/wenqin/Desktop/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:26:18-44
+		ADDED from /Users/wenqin/Documents/Projects/htnMap/Application/src/main/AndroidManifest.xml:26:9-35
 	android:theme
-		ADDED from /Users/wenqin/Desktop/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:29:9-45
+		ADDED from /Users/wenqin/Documents/Projects/htnMap/Application/src/main/AndroidManifest.xml:29:9-45
 activity#com.example.android.camera2basic.CameraActivity
-ADDED from /Users/wenqin/Desktop/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:31:9-37:20
+ADDED from /Users/wenqin/Documents/Projects/htnMap/Application/src/main/AndroidManifest.xml:30:9-38:20
 	android:label
-		ADDED from /Users/wenqin/Desktop/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:32:19-51
+		ADDED from /Users/wenqin/Documents/Projects/htnMap/Application/src/main/AndroidManifest.xml:32:13-45
 	android:name
-		ADDED from /Users/wenqin/Desktop/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:31:19-49
+		ADDED from /Users/wenqin/Documents/Projects/htnMap/Application/src/main/AndroidManifest.xml:31:13-43
+activity#com.example.android.camera2basic.LocationActivity
+ADDED from /Users/wenqin/Documents/Projects/htnMap/Application/src/main/AndroidManifest.xml:39:9-45:20
+	android:name
+		ADDED from /Users/wenqin/Documents/Projects/htnMap/Application/src/main/AndroidManifest.xml:39:19-51
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/wenqin/Desktop/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:33:13-36:29
+ADDED from /Users/wenqin/Documents/Projects/htnMap/Application/src/main/AndroidManifest.xml:40:13-44:29
 action#android.intent.action.MAIN
-ADDED from /Users/wenqin/Desktop/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:34:17-69
+ADDED from /Users/wenqin/Documents/Projects/htnMap/Application/src/main/AndroidManifest.xml:41:17-69
 	android:name
-		ADDED from /Users/wenqin/Desktop/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:34:25-66
+		ADDED from /Users/wenqin/Documents/Projects/htnMap/Application/src/main/AndroidManifest.xml:41:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/wenqin/Desktop/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:35:17-77
+ADDED from /Users/wenqin/Documents/Projects/htnMap/Application/src/main/AndroidManifest.xml:43:17-77
 	android:name
-		ADDED from /Users/wenqin/Desktop/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml:35:27-74
+		ADDED from /Users/wenqin/Documents/Projects/htnMap/Application/src/main/AndroidManifest.xml:43:27-74
 uses-sdk
-INJECTED from /Users/wenqin/Desktop/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /Users/wenqin/Desktop/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml
-INJECTED from /Users/wenqin/Desktop/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml
+INJECTED from /Users/wenqin/Documents/Projects/htnMap/Application/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/wenqin/Documents/Projects/htnMap/Application/src/main/AndroidManifest.xml
+INJECTED from /Users/wenqin/Documents/Projects/htnMap/Application/src/main/AndroidManifest.xml
 MERGED from [com.android.support:support-v13:27.0.2] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/support-v13-27.0.2.aar/1dbcf935f1e05c1a9b7d67f1375042d7/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-v13:27.0.2] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/support-v13-27.0.2.aar/1dbcf935f1e05c1a9b7d67f1375042d7/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-location:15.0.1] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/play-services-location-15.0.1.aar/33eca1a156d9e044d0848fd15d0249e8/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-location:15.0.1] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/play-services-location-15.0.1.aar/33eca1a156d9e044d0848fd15d0249e8/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/60e56fcbf3edcacc73dafaa968887bb5/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/60e56fcbf3edcacc73dafaa968887bb5/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-15.0.1.aar/e61ce95bf819955a6467233205aba4bc/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-15.0.1.aar/e61ce95bf819955a6467233205aba4bc/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/a87f6faa03154348161cc2114c8fb188/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/a87f6faa03154348161cc2114c8fb188/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/3f976b33a5608ab87e389c71c3258069/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/3f976b33a5608ab87e389c71c3258069/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-v4:27.0.2] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/support-v4-27.0.2.aar/ca60b7999920dbd291bb2c26c4411d8f/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-v4:27.0.2] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/support-v4-27.0.2.aar/ca60b7999920dbd291bb2c26c4411d8f/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:cardview-v7:27.0.2] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.0.2.aar/186c74841e9030771b067dc697addecc/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:cardview-v7:27.0.2] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.0.2.aar/186c74841e9030771b067dc697addecc/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:appcompat-v7:27.0.2] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/a30c05e161c9390be32672b2cc9dece3/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:appcompat-v7:27.0.2] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/a30c05e161c9390be32672b2cc9dece3/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-media-compat:27.0.2] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.0.2.aar/f3ff1ec9f35b232d8265831a97a08cd9/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-media-compat:27.0.2] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.0.2.aar/f3ff1ec9f35b232d8265831a97a08cd9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/b7228675c4792a18978dc3d8e3b6431b/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/b7228675c4792a18978dc3d8e3b6431b/AndroidManifest.xml:5:5-7:41
 MERGED from [com.android.support:support-fragment:27.0.2] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/support-fragment-27.0.2.aar/1b7c6a26842f2eda915897033bcb9924/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-fragment:27.0.2] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/support-fragment-27.0.2.aar/1b7c6a26842f2eda915897033bcb9924/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-core-utils:27.0.2] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.0.2.aar/2bd8401f3f48885a4bf8251368c23a64/AndroidManifest.xml:20:5-44
@@ -79,17 +115,33 @@ MERGED from [com.android.support:support-core-ui:27.0.2] /Users/wenqin/.gradle/c
 MERGED from [com.android.support:support-core-ui:27.0.2] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.0.2.aar/30f68a6def637675a8aa03e4588858a4/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-vector-drawable:27.0.2] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.0.2.aar/759e2bafe488f7be776c99390001ac2d/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-vector-drawable:27.0.2] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.0.2.aar/759e2bafe488f7be776c99390001ac2d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.0.2] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.0.2.aar/f3ff1ec9f35b232d8265831a97a08cd9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.0.2] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.0.2.aar/f3ff1ec9f35b232d8265831a97a08cd9/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-compat:27.0.2] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/085355902d6c44207cf7b4474029f9c4/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-compat:27.0.2] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/085355902d6c44207cf7b4474029f9c4/AndroidManifest.xml:20:5-44
 MERGED from [android.arch.lifecycle:runtime:1.0.3] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/runtime-1.0.3.aar/ca41b99a7d26f06282c947a61fe158a3/AndroidManifest.xml:20:5-22:41
 MERGED from [android.arch.lifecycle:runtime:1.0.3] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/runtime-1.0.3.aar/ca41b99a7d26f06282c947a61fe158a3/AndroidManifest.xml:20:5-22:41
-INJECTED from /Users/wenqin/Desktop/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml
-INJECTED from /Users/wenqin/Desktop/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml
+INJECTED from /Users/wenqin/Documents/Projects/htnMap/Application/src/main/AndroidManifest.xml
+INJECTED from /Users/wenqin/Documents/Projects/htnMap/Application/src/main/AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from /Users/wenqin/Desktop/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml
-		ADDED from /Users/wenqin/Desktop/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml
-		INJECTED from /Users/wenqin/Desktop/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml
+		INJECTED from /Users/wenqin/Documents/Projects/htnMap/Application/src/main/AndroidManifest.xml
+		ADDED from /Users/wenqin/Documents/Projects/htnMap/Application/src/main/AndroidManifest.xml
+		INJECTED from /Users/wenqin/Documents/Projects/htnMap/Application/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /Users/wenqin/Desktop/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml
-		ADDED from /Users/wenqin/Desktop/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml
-		INJECTED from /Users/wenqin/Desktop/android-Camera2Basic-master/Application/src/main/AndroidManifest.xml
+		INJECTED from /Users/wenqin/Documents/Projects/htnMap/Application/src/main/AndroidManifest.xml
+		ADDED from /Users/wenqin/Documents/Projects/htnMap/Application/src/main/AndroidManifest.xml
+		INJECTED from /Users/wenqin/Documents/Projects/htnMap/Application/src/main/AndroidManifest.xml
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:15.0.1] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/60e56fcbf3edcacc73dafaa968887bb5/AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:15.0.1] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/60e56fcbf3edcacc73dafaa968887bb5/AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:15.0.1] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/60e56fcbf3edcacc73dafaa968887bb5/AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:15.0.1] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/60e56fcbf3edcacc73dafaa968887bb5/AndroidManifest.xml:24:13-79
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:15.0.1] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/3f976b33a5608ab87e389c71c3258069/AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:15.0.1] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/3f976b33a5608ab87e389c71c3258069/AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:15.0.1] /Users/wenqin/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/3f976b33a5608ab87e389c71c3258069/AndroidManifest.xml:24:13-58

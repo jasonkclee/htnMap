@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/wenqin/Desktop/android-Camera2Basic-master/Application/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v21/values-v21.xml",
+            "outputFile": "/Users/wenqin/Documents/Projects/htnMap/Application/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v21/values-v21.xml",
             "map": [
                 {
                     "source": "/Users/wenqin/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/a30c05e161c9390be32672b2cc9dece3/res/values-v21/values-v21.xml",
@@ -23,6 +23,25 @@
                     }
                 },
                 {
+                    "source": "/Users/wenqin/Documents/Projects/htnMap/Application/src/main/res/values-v21/base-template-styles.xml",
+                    "from": {
+                        "startLines": "20",
+                        "startColumns": "4",
+                        "startOffsets": "677",
+                        "endLines": "21",
+                        "endColumns": "12",
+                        "endOffsets": "753"
+                    },
+                    "to": {
+                        "startLines": "279",
+                        "startColumns": "4",
+                        "startOffsets": "20427",
+                        "endLines": "280",
+                        "endColumns": "12",
+                        "endOffsets": "20503"
+                    }
+                },
+                {
                     "source": "/Users/wenqin/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.0.2.aar/f3ff1ec9f35b232d8265831a97a08cd9/res/values-v21/values-v21.xml",
                     "from": {
                         "startLines": "2,5,8,11",
@@ -39,25 +58,6 @@
                         "endLines": "267,270,274,278",
                         "endColumns": "12,12,12,12",
                         "endOffsets": "19670,19833,20127,20422"
-                    }
-                },
-                {
-                    "source": "/Users/wenqin/Desktop/android-Camera2Basic-master/Application/src/main/res/values-v21/base-template-styles.xml",
-                    "from": {
-                        "startLines": "20",
-                        "startColumns": "4",
-                        "startOffsets": "677",
-                        "endLines": "21",
-                        "endColumns": "12",
-                        "endOffsets": "753"
-                    },
-                    "to": {
-                        "startLines": "279",
-                        "startColumns": "4",
-                        "startOffsets": "20427",
-                        "endLines": "280",
-                        "endColumns": "12",
-                        "endOffsets": "20503"
                     }
                 },
                 {
