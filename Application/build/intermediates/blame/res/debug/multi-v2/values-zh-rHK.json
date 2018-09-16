@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/wenqin/Documents/Projects/htnMap/Application/build/intermediates/incremental/mergeDebugResources/merged.dir/values-zh-rHK/values-zh-rHK.xml",
+            "outputFile": "C:\\Users\\Owner\\Desktop\\htn\\gitRepo\\htnMap\\Application\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-zh-rHK\\values-zh-rHK.xml",
             "map": [
                 {
-                    "source": "/Users/wenqin/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/a30c05e161c9390be32672b2cc9dece3/res/values-zh-rHK/values-zh-rHK.xml",
+                    "source": "C:\\Users\\Owner\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\6b85864333152560aef113ef63a4b350\\res\\values-zh-rHK\\values-zh-rHK.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -21,7 +21,24 @@
                     }
                 },
                 {
-                    "source": "/Users/wenqin/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/60e56fcbf3edcacc73dafaa968887bb5/res/values-zh-rHK/values.xml",
+                    "source": "C:\\Users\\Owner\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.0.2.aar\\962831f86411f18d109f0059db32618d\\res\\values-zh-rHK\\values-zh-rHK.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "101",
+                        "endOffsets": "152"
+                    },
+                    "to": {
+                        "startLines": "38",
+                        "startColumns": "4",
+                        "startOffsets": "4125",
+                        "endColumns": "101",
+                        "endOffsets": "4222"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Owner\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\3c1a33fb676ea90f428df5ef8008a41a\\res\\values-zh-rHK\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -38,7 +55,7 @@
                     }
                 },
                 {
-                    "source": "/Users/wenqin/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/3f976b33a5608ab87e389c71c3258069/res/values-zh-rHK/values.xml",
+                    "source": "C:\\Users\\Owner\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-15.0.1.aar\\0a1e4b37e9264717e028683b296fd9cf\\res\\values-zh-rHK\\values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -52,23 +69,6 @@
                         "startOffsets": "2754",
                         "endColumns": "166",
                         "endOffsets": "2916"
-                    }
-                },
-                {
-                    "source": "/Users/wenqin/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/085355902d6c44207cf7b4474029f9c4/res/values-zh-rHK/values-zh-rHK.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "101",
-                        "endOffsets": "152"
-                    },
-                    "to": {
-                        "startLines": "38",
-                        "startColumns": "4",
-                        "startOffsets": "4125",
-                        "endColumns": "101",
-                        "endOffsets": "4222"
                     }
                 }
             ]

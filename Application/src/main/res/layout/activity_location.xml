@@ -10,4 +10,13 @@
         android:layout_height="wrap_content"
         android:text="Click me to get location"
         android:id="@+id/btnShowLocation"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Locations"
+        android:id="@+id/tvLocations"/>
+    <ImageView
+        android:id="@+id/myimageview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
 </android.support.constraint.ConstraintLayout>
