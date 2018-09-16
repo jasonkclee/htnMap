@@ -122,8 +122,6 @@ public class MSurfaceView extends SurfaceView implements Runnable, GestureDetect
 
                 int i = 0;
                 for(CheckPoint p : CheckPoint.getTestPoints()){
-                    Log.wtf("TAG", "Numerator" + (p.getLatitude() - xs.get(0)) + " denom: " + dx * vWidth);
-                    Log.wtf("TAG", "" + ((p.getLatitude() - xs.get(0)) / dx * vWidth));
 
                     float newX = (float)((p.getX() - xs.get(0)) / dx * vWidth);
                     float newY = (float)((p.getY() - ys.get(0)) / dy * vHeight - vHeight/2 );
@@ -281,6 +279,10 @@ public class MSurfaceView extends SurfaceView implements Runnable, GestureDetect
             public void onLocationResult(LocationResult locationResult) {
                 List<Location> locations = locationResult.getLocations();
                 lastLocation = locations.get(locations.size()-1); // store last location
+                Log.wtf("MYTAG", "" + lastLocation.getAccuracy());
+                if(lastLocation.hasAccuracy() && lastLocation.getAccuracy() < 60F) {
+                    return;
+                }
                 if(! arrived){ //check if close enough to move to next point
                     CheckPoint myPt = new CheckPoint(lastLocation.getLatitude(), lastLocation.getLongitude());
                     if(CheckPoint.getTestPoints()[checkIndex].atCheckPoint(myPt.getX(), myPt.getY())){
