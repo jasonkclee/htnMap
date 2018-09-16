@@ -10,4 +10,16 @@
         android:layout_height="wrap_content"
         android:text="Click me to get location"
         android:id="@+id/btnShowLocation"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click me to get orientation"
+        android:id="@+id/btnOrientation"/>
+
+    <ImageView
+        android:src="@drawable/arrow"
+        android:id="@+id/arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 </android.support.constraint.ConstraintLayout>

@@ -16,21 +16,53 @@
 
 package com.example.android.camera2basic;
 
+import android.app.ActionBar;
+import android.graphics.Matrix;
+import android.hardware.SensorManager;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
+import android.widget.ImageView;
+import android.graphics.Matrix;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
+import android.graphics.Camera;
 
 public class CameraActivity extends AppCompatActivity {
+    Camera mCamera = new Camera();
+    private Matrix getTransformationMatrix() {
+        Matrix matrix = new Matrix();
+        mCamera.save();
+        mCamera.translate(0, 0, 4);
+        mCamera.getMatrix(matrix);
+        mCamera.restore();
 
+        return matrix;
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_camera);
 
         if (null == savedInstanceState) {
-            getSupportFragmentManager().beginTransaction()
-                    .replace(R.id.container, Camera2BasicFragment.newInstance())
-                    .commit();
+            // add the image
+            RelativeLayout relativeLayout = findViewById(R.id.relative_container);
+            ImageView arrowImage = new ImageView(this);
+            RelativeLayout.LayoutParams params =
+                    new RelativeLayout.LayoutParams(
+                            RelativeLayout.LayoutParams.WRAP_CONTENT,
+                            RelativeLayout.LayoutParams.WRAP_CONTENT);
+            arrowImage.setImageResource(R.drawable.arrow);
+            relativeLayout
+                    .addView(arrowImage, params);
+
+            // rotate the image
+            Matrix matrix = arrowImage.getMatrix();
+            arrowImage.setScaleType(ImageView.ScaleType.MATRIX);
+            arrowImage.setImageMatrix(getTransformationMatrix());
         }
+
     }
+
 
 }
