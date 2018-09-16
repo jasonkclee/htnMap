@@ -2,12 +2,7 @@ package com.example.android.camera2basic;
 
 import android.Manifest;
 import android.content.pm.PackageManager;
-import android.graphics.Matrix;
-import android.hardware.Sensor;
-import android.hardware.SensorEvent;
-import android.hardware.SensorEventListener;
 import android.location.Location;
-import android.graphics.Camera;
 import android.location.LocationManager;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
@@ -23,68 +18,16 @@ import com.google.android.gms.location.LocationRequest;
 import com.google.android.gms.location.LocationResult;
 import com.google.android.gms.location.LocationServices;
 
-import java.util.ArrayList;
 import java.util.List;
-import android.hardware.SensorManager;
-import android.widget.ImageView;
 
-public class LocationActivity extends AppCompatActivity implements SensorEventListener {
+public class LocationActivity extends AppCompatActivity {
     private LocationCallback mLocationCallback;
-    private SensorManager mSensorManager;
-    Sensor accelerometer;
-    Sensor magnetometer;
-
-    Camera mCamera;
-    ImageView arrow;
-
-    ArrayList<Float> readings = new ArrayList<>();
-
-    double currentLat = 43.4725764;
-    double currentLong = -80.5397156;
-    double targetLat = 43.4728327;
-    double targetLong = -80.5399427;
-
-    private float average(ArrayList<Float> arr) {
-        float sum = 0;
-        float count = 0;
-        for(int i = 0; i < arr.size(); i++) {
-            count += 1;
-            sum += arr.get(i);
-        }
-        return sum/count;
-    }
-
-    private void rotate(ImageView image, int angle) {
-//        Matrix matrix = new Matrix();
-//        image.setScaleType(ImageView.ScaleType.MATRIX);
-//        matrix.postRotate((float) angle, image.getWidth()/2, image.getHeight()/2);
-//        image.setImageMatrix(matrix);
-//
-//        return matrix;
-        image.setRotation(angle);
-    }
-
-    private double computeAngle(double lat1, double long1, double lat2, double long2) {
-        double c = Math.sqrt(Math.pow(lat2 - lat1, 2) + Math.pow(long2 - long1, 2));
-        double  deltaLat = lat2 - lat1;
-        return Math.acos(deltaLat / c);
-    }
-
-    private float[] applyLowPassFilter(float[] input, float[] output) {
-        if(output == null) {
-            return input;
-        }
-        for (int i = 0; i < input.length; i++) {
-            output[i] = output[i] + 0.5f * (input[i] - output[i]);
-        }
-        return output;
-    }
 
     protected LocationRequest createLocationRequest() {
         LocationRequest mLocationRequest = new LocationRequest();
         mLocationRequest.setInterval(1000);
         mLocationRequest.setFastestInterval(1000);
-        mLocationRequest.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
+        mLocationRequest.setPriority(LocationRequest.PRIORITY_BALANCED_POWER_ACCURACY);
         return mLocationRequest;
     }
 
@@ -116,13 +59,10 @@ public class LocationActivity extends AppCompatActivity implements SensorEventLi
         }
     }
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        Log.wtf("TAG", "computing the angle" + computeAngle(currentLat, currentLong, targetLat, targetLong));
-
-        //setup the location service
         setContentView(R.layout.activity_location);
         Button locationButton = (Button) findViewById(R.id.btnShowLocation);
         locationButton.setOnClickListener(new View.OnClickListener() {
@@ -133,57 +73,12 @@ public class LocationActivity extends AppCompatActivity implements SensorEventLi
             }
         });
 
-        // setup the sensors
-        mSensorManager = (SensorManager)getSystemService(SENSOR_SERVICE);
-        accelerometer = mSensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
-        magnetometer = mSensorManager.getDefaultSensor(Sensor.TYPE_MAGNETIC_FIELD);
-
-        arrow = findViewById(R.id.arrow);
-    }
-
-
-    public void onAccuracyChanged(Sensor sensor, int accuracy) {
-    }
-
-    float[] mGravity;
-    float[] mGeomagnetic;
-    public void onSensorChanged(SensorEvent event) {
-        if(event.sensor.getType() == Sensor.TYPE_ACCELEROMETER) {
-            mGravity = applyLowPassFilter(event.values, mGravity);
-        }
-        if(event.sensor.getType() == Sensor.TYPE_MAGNETIC_FIELD) {
-            mGeomagnetic = applyLowPassFilter(event.values, mGeomagnetic);
-        }
-        if(mGravity != null && mGeomagnetic != null) {
-            float R[] = new float[9];
-            float I[] = new float[9];
-            boolean success = SensorManager.getRotationMatrix(R, I, mGravity, mGeomagnetic);
-            if(success) {
-                float orientation[] = new float[3];
-                SensorManager.getOrientation(R, orientation);
-                double rotationAngle = orientation[0]/3.14 * 360;
-                readings.add((float) rotationAngle);
-                if(readings.size() > 100) {
-                    rotate(arrow, (int) (average(readings)));
-                    readings = new ArrayList<>();
-                }
-            }
-        }
     }
 
     @Override
     protected void onResume() {
         super.onResume();
         startLocationUpdates();
-        mSensorManager.registerListener(this, accelerometer, SensorManager.SENSOR_DELAY_FASTEST);
-        mSensorManager.registerListener(this, magnetometer, SensorManager.SENSOR_DELAY_FASTEST);
-
-    }
-
-    @Override
-    protected void onPause() {
-        super.onPause();
-        mSensorManager.unregisterListener(this);
     }
 
 }

@@ -1,69 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
-    abi="x86_64,x86"
-    api-level="23"
-    build-mode="FULL"
-    density="420dpi"
+    abi="arm64-v8a,armeabi-v7a,armeabi"
+    api-level="26"
+    build-mode="HOT_WARM"
+    density="xxhdpi"
     format="10"
     plugin-version="3.1.4"
-    timestamp="1537063525522"
+    timestamp="1537018377003"
     token="-4961519266990408119"
-    verifier="FULL_BUILD_REQUESTED" >
+    verifier="NO_CHANGES" >
 
     <task
         name="javac"
-        duration="844" />
+        duration="0" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="686" />
+        duration="0" />
     <task
         name="verifier"
-        duration="29" />
-
-    <artifact
-        location="/Users/wenqin/Documents/Projects/htnMap/Application/build/intermediates/split-apk/debug/dep/dependencies.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/wenqin/Documents/Projects/htnMap/Application/build/intermediates/split-apk/debug/slices/slice_2.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/wenqin/Documents/Projects/htnMap/Application/build/intermediates/split-apk/debug/slices/slice_1.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/wenqin/Documents/Projects/htnMap/Application/build/intermediates/split-apk/debug/slices/slice_0.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/wenqin/Documents/Projects/htnMap/Application/build/intermediates/split-apk/debug/slices/slice_5.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/wenqin/Documents/Projects/htnMap/Application/build/intermediates/split-apk/debug/slices/slice_3.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/wenqin/Documents/Projects/htnMap/Application/build/intermediates/split-apk/debug/slices/slice_4.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/wenqin/Documents/Projects/htnMap/Application/build/intermediates/split-apk/debug/slices/slice_8.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/wenqin/Documents/Projects/htnMap/Application/build/intermediates/split-apk/debug/slices/slice_7.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/wenqin/Documents/Projects/htnMap/Application/build/intermediates/split-apk/debug/slices/slice_6.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/wenqin/Documents/Projects/htnMap/Application/build/intermediates/split-apk/debug/slices/slice_9.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/wenqin/Documents/Projects/htnMap/Application/build/intermediates/instant-run-apk/debug/Application-debug.apk"
-        type="SPLIT_MAIN" />
+        duration="0" />
 
     <build
         build-mode="FULL"
-        timestamp="1537063525522"
+        timestamp="1537017193373"
         verifier="FULL_BUILD_REQUESTED" >
+        <artifact
+            location="/Users/wenqin/Documents/Projects/htnMap/Application/build/intermediates/resources/instant-run/debug/resources-debug.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/wenqin/Documents/Projects/htnMap/Application/build/intermediates/split-apk/debug/dep/dependencies.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/wenqin/Documents/Projects/htnMap/Application/build/intermediates/split-apk/debug/slices/slice_1.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/wenqin/Documents/Projects/htnMap/Application/build/intermediates/split-apk/debug/slices/slice_2.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/wenqin/Documents/Projects/htnMap/Application/build/intermediates/split-apk/debug/slices/slice_0.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/wenqin/Documents/Projects/htnMap/Application/build/intermediates/split-apk/debug/slices/slice_3.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/wenqin/Documents/Projects/htnMap/Application/build/intermediates/split-apk/debug/slices/slice_5.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/wenqin/Documents/Projects/htnMap/Application/build/intermediates/split-apk/debug/slices/slice_4.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/wenqin/Documents/Projects/htnMap/Application/build/intermediates/split-apk/debug/slices/slice_6.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/wenqin/Documents/Projects/htnMap/Application/build/intermediates/split-apk/debug/slices/slice_7.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/wenqin/Documents/Projects/htnMap/Application/build/intermediates/split-apk/debug/slices/slice_8.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/wenqin/Documents/Projects/htnMap/Application/build/intermediates/split-apk/debug/slices/slice_9.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/wenqin/Documents/Projects/htnMap/Application/build/intermediates/instant-run-apk/debug/Application-debug.apk"
+            type="SPLIT_MAIN" />
+    </build>
+    <build
+        build-mode="COLD"
+        ir-eligibility="COMPATIBLE"
+        timestamp="1537018346557"
+        verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/Users/wenqin/Documents/Projects/htnMap/Application/build/intermediates/split-apk/debug/dep/dependencies.apk"
             type="SPLIT" />
@@ -77,22 +85,22 @@
             location="/Users/wenqin/Documents/Projects/htnMap/Application/build/intermediates/split-apk/debug/slices/slice_0.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/wenqin/Documents/Projects/htnMap/Application/build/intermediates/split-apk/debug/slices/slice_5.apk"
+            location="/Users/wenqin/Documents/Projects/htnMap/Application/build/intermediates/split-apk/debug/slices/slice_3.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/wenqin/Documents/Projects/htnMap/Application/build/intermediates/split-apk/debug/slices/slice_3.apk"
+            location="/Users/wenqin/Documents/Projects/htnMap/Application/build/intermediates/split-apk/debug/slices/slice_5.apk"
             type="SPLIT" />
         <artifact
             location="/Users/wenqin/Documents/Projects/htnMap/Application/build/intermediates/split-apk/debug/slices/slice_4.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/wenqin/Documents/Projects/htnMap/Application/build/intermediates/split-apk/debug/slices/slice_8.apk"
+            location="/Users/wenqin/Documents/Projects/htnMap/Application/build/intermediates/split-apk/debug/slices/slice_6.apk"
             type="SPLIT" />
         <artifact
             location="/Users/wenqin/Documents/Projects/htnMap/Application/build/intermediates/split-apk/debug/slices/slice_7.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/wenqin/Documents/Projects/htnMap/Application/build/intermediates/split-apk/debug/slices/slice_6.apk"
+            location="/Users/wenqin/Documents/Projects/htnMap/Application/build/intermediates/split-apk/debug/slices/slice_8.apk"
             type="SPLIT" />
         <artifact
             location="/Users/wenqin/Documents/Projects/htnMap/Application/build/intermediates/split-apk/debug/slices/slice_9.apk"
@@ -101,5 +109,9 @@
             location="/Users/wenqin/Documents/Projects/htnMap/Application/build/intermediates/instant-run-apk/debug/Application-debug.apk"
             type="SPLIT_MAIN" />
     </build>
+    <build
+        build-mode="HOT_WARM"
+        timestamp="1537018377003"
+        verifier="NO_CHANGES" />
 
 </instant-run>
