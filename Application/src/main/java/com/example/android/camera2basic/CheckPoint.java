@@ -14,6 +14,39 @@ public class CheckPoint {
         this.lon = lon;
     }
 
+    public double getX(){
+        double mapWidth    = 200;
+        double x = (lon+180)*(mapWidth/360);
+        return x;
+    }
+
+    public double getY(){
+        double mapWidth    = 200;
+        double mapHeight   = 100;
+        double latRad = lat*Math.PI/180;
+// get y value
+        double mercN = Math.log(Math.tan((Math.PI/4)+(latRad/2)));
+        double y     = (mapHeight/2)-(mapWidth*mercN/(2*Math.PI));
+        return y;
+    }
+/*
+    public double[] getXY(){
+
+        double mapWidth    = 200;
+        double mapHeight   = 100;
+
+// get x value
+        double x = (lon+180)*(mapWidth/360);
+
+// convert from degrees to radians
+        double latRad = lat*Math.PI/180;
+
+// get y value
+        double mercN = Math.log(Math.tan((Math.PI/4)+(latRad/2)));
+        double y     = (mapHeight/2)-(mapWidth*mercN/(2*Math.PI));
+        return new double[] {x, y};
+    }*/
+
     /* Return if the given lat/long is close enough to checkpoint */
     public boolean atCheckPoint(double mLat, double mLon){
         double dx = mLat - lat;

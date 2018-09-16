@@ -7,6 +7,10 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Rect;
+import android.hardware.Sensor;
+import android.hardware.SensorEvent;
+import android.hardware.SensorEventListener;
+import android.hardware.SensorManager;
 import android.location.Location;
 import android.location.LocationManager;
 import android.os.PersistableBundle;
@@ -35,8 +39,11 @@ import java.util.List;
 
 import static android.view.GestureDetector.*;
 
-public class LocationActivity extends AppCompatActivity {
+public class LocationActivity extends AppCompatActivity implements SensorEventListener {
     private MSurfaceView mSurfaceView;
+    private SensorManager mSensorManager;
+    private Sensor accelerometer;
+    private Sensor magnetometer;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -44,17 +51,96 @@ public class LocationActivity extends AppCompatActivity {
         mSurfaceView = new MSurfaceView(this, this);
         setContentView(mSurfaceView);
 
+        // setup the sensors
+        mSensorManager = (SensorManager)getSystemService(SENSOR_SERVICE);
+        accelerometer = mSensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
+        magnetometer = mSensorManager.getDefaultSensor(Sensor.TYPE_MAGNETIC_FIELD);
     }
+
+    float[] mGravity;
+    float[] mGeomagnetic;
+    ArrayList<Float> readings = new ArrayList<>();
+    public void onSensorChanged(SensorEvent event) {
+        if(event.sensor.getType() == Sensor.TYPE_ACCELEROMETER) {
+            mGravity = applyLowPassFilter(event.values, mGravity);
+        }
+        if(event.sensor.getType() == Sensor.TYPE_MAGNETIC_FIELD) {
+            mGeomagnetic = applyLowPassFilter(event.values, mGeomagnetic);
+        }
+        if(mGravity != null && mGeomagnetic != null) {
+            float R[] = new float[9];
+            float I[] = new float[9];
+            boolean success = SensorManager.getRotationMatrix(R, I, mGravity, mGeomagnetic);
+            if(success) {
+                float orientation[] = new float[3];
+                SensorManager.getOrientation(R, orientation);
+                double rotationAngle = orientation[0]/3.14 * 360;
+                readings.add((float) rotationAngle);
+                if(readings.size() > 100) {
+                    // ROTATE ARROW HERE?
+                    //rotate(arrow, (int) (average(readings)));
+
+                    readings = new ArrayList<>();
+                }
+            }
+        }
+    }
+
+    @Override
+    public void onAccuracyChanged(Sensor sensor, int i) {
+
+    }
+
     @Override
     protected void onPause() {
         super.onPause();
         mSurfaceView.pause();
+        mSensorManager.unregisterListener(this);
+
     }
     @Override
     protected void onResume() {
         super.onResume();
         mSurfaceView.resume();
+        mSensorManager.registerListener(this, accelerometer, SensorManager.SENSOR_DELAY_FASTEST);
+        mSensorManager.registerListener(this, magnetometer, SensorManager.SENSOR_DELAY_FASTEST);
     }
+    private float average(ArrayList<Float> arr) {
+        float sum = 0;
+        float count = 0;
+        for(int i = 0; i < arr.size(); i++) {
+            count += 1;
+            sum += arr.get(i);
+        }
+        return sum/count;
+    }
+
+    private void rotate(ImageView image, int angle) {
+//        Matrix matrix = new Matrix();
+//        image.setScaleType(ImageView.ScaleType.MATRIX);
+//        matrix.postRotate((float) angle, image.getWidth()/2, image.getHeight()/2);
+//        image.setImageMatrix(matrix);
+//
+//        return matrix;
+        image.setRotation(angle);
+    }
+
+    private double computeAngle(double lat1, double long1, double lat2, double long2) {
+        double c = Math.sqrt(Math.pow(lat2 - lat1, 2) + Math.pow(long2 - long1, 2));
+        double  deltaLat = lat2 - lat1;
+        return Math.acos(deltaLat / c);
+    }
+
+    private float[] applyLowPassFilter(float[] input, float[] output) {
+        if(output == null) {
+            return input;
+        }
+        for (int i = 0; i < input.length; i++) {
+            output[i] = output[i] + 0.5f * (input[i] - output[i]);
+        }
+        return output;
+    }
+
 }
 /*
 public class LocationActivity extends AppCompatActivity implements OnGestureListener {

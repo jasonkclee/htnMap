@@ -46,6 +46,10 @@ public class MSurfaceView extends SurfaceView implements Runnable, GestureDetect
     private Activity mActivity;
     private Location lastLocation = null; // store last location
 
+    private float userRotation;
+    public void setRotation(float rotation){
+        userRotation = rotation;
+    }
 
     @Override
     protected void onSizeChanged(int w, int h, int oldw, int oldh) {
@@ -81,6 +85,8 @@ public class MSurfaceView extends SurfaceView implements Runnable, GestureDetect
         mGameThread.start();
     }
 
+
+
     @Override
     public void run() {
         Canvas canvas;
@@ -96,8 +102,11 @@ public class MSurfaceView extends SurfaceView implements Runnable, GestureDetect
                 ArrayList<Double> ys = new ArrayList<Double>();
 
                 for(CheckPoint p : CheckPoint.getTestPoints()){
-                    xs.add(p.getLatitude());
-                    ys.add(p.getLongitude());
+
+                    xs.add(p.getX());
+                    ys.add(p.getY());
+                    //xs.add(p.getLatitude());
+                    //ys.add(p.getLongitude());
                 }
                 Collections.sort(xs);
                 Collections.sort(ys);
@@ -111,18 +120,30 @@ public class MSurfaceView extends SurfaceView implements Runnable, GestureDetect
 
                 canvas.drawColor(Color.WHITE);
 
+                int i = 0;
                 for(CheckPoint p : CheckPoint.getTestPoints()){
                     Log.wtf("TAG", "Numerator" + (p.getLatitude() - xs.get(0)) + " denom: " + dx * vWidth);
                     Log.wtf("TAG", "" + ((p.getLatitude() - xs.get(0)) / dx * vWidth));
-                    float newX = (float)((p.getLatitude() - xs.get(0)) / dx * vWidth);
-                    float newY = (float)((p.getLongitude() - ys.get(0)) / dy * vHeight - vHeight/2 );
-                    mPaint.setColor(Color.GRAY);
+
+                    float newX = (float)((p.getX() - xs.get(0)) / dx * vWidth);
+                    float newY = (float)((p.getY() - ys.get(0)) / dy * vHeight - vHeight/2 );
+                    if(i == checkIndex) {
+                        mPaint.setColor(Color.BLUE);
+                    }
+                    else{
+                        mPaint.setColor(Color.GRAY);
+                    }
+
                     canvas.drawCircle(newX, newY, vWidth * 0.2f, mPaint);
+
+                    i ++;
                 }
 
+
                 if(lastLocation != null){
-                    float newX = (float)((lastLocation.getLatitude() - xs.get(0)) / dx * vWidth);
-                    float newY = (float)((lastLocation.getLongitude() - ys.get(0)) / dy * vHeight - vHeight/2 );
+                    CheckPoint myPt = new CheckPoint(lastLocation.getLatitude(), lastLocation.getLongitude());
+                    float newX = (float)((myPt.getX() - xs.get(0)) / dx * vWidth);
+                    float newY = (float)((myPt.getY() - ys.get(0)) / dy * vHeight - vHeight/2 );
                     mPaint.setColor(Color.GREEN);
                     canvas.drawCircle(newX, newY, vWidth * 0.2f, mPaint);
                 }
@@ -130,6 +151,10 @@ public class MSurfaceView extends SurfaceView implements Runnable, GestureDetect
                     Log.wtf("MYTAG", "Null last location");
                     //startLocationUpdates();
                 }
+
+                // draw the triangle
+                //canvas.draw
+
                 canvas.restore();
                 mSurfaceHolder.unlockCanvasAndPost(canvas);
             }
@@ -257,10 +282,11 @@ public class MSurfaceView extends SurfaceView implements Runnable, GestureDetect
                 List<Location> locations = locationResult.getLocations();
                 lastLocation = locations.get(locations.size()-1); // store last location
                 if(! arrived){ //check if close enough to move to next point
-                    if(CheckPoint.getTestPoints()[checkIndex].atCheckPoint(lastLocation.getLatitude(), lastLocation.getLongitude())){
+                    CheckPoint myPt = new CheckPoint(lastLocation.getLatitude(), lastLocation.getLongitude());
+                    if(CheckPoint.getTestPoints()[checkIndex].atCheckPoint(myPt.getX(), myPt.getY())){
                         Log.wtf("MYTAG", "at checkpt, moving to next point");
-                        final TextView tv1 = (TextView)findViewById(R.id.tvLocations);
-                        tv1.setText(tv1.getText() + "\n found cp " + checkIndex);
+                        //final TextView tv1 = (TextView)findViewById(R.id.tvLocations);
+                        //tv1.setText(tv1.getText() + "\n found cp " + checkIndex);
                         if(checkIndex >= CheckPoint.getTestPoints().length-1){
                             arrived = true;
                             Log.wtf("MYTAG", "Last checkpoint");
